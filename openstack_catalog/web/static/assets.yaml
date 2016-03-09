@@ -2635,3 +2635,33 @@
       license: Apache 2.0
       attributes:
         url: https://raw.githubusercontent.com/openstack/tosca-parser/master/toscaparser/tests/data/tosca_helloworld.yaml
+    -
+      name: Manila Service Image (reference image for Generic driver)
+      provided_by:
+        name: OpenStack Manila Project
+        href: https://wiki.openstack.org/wiki/Manila
+        company: OpenStack
+      description: >
+                  Magnum is an OpenStack API service developed
+                  by the OpenStack Containers Team making
+                  container orchestration engines such as
+                  Docker Swarm and Kubernetes available as first
+                  class resources in OpenStack. Magnum uses
+                  Heat to orchestrate an OS image which
+                  contains Docker and Kubernetes and runs that
+                  image in either virtual machines or bare
+                  metal in a cluster configuration.
+
+                  This image is intended to be used with an
+                  environment running Magnum.
+                  See https://wiki.openstack.org/wiki/Magnum
+                  for more information on using this image and
+                  Magnum in your OpenStack environment.
+      service:
+        type: glance
+        disk_format: qcow2
+        container_format: bare
+      license: Multi-licensed OpenSource
+      hash: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+      attributes:
+        url: https://fedorapeople.org/groups/magnum/fedora-21-atomic-5.qcow2
